@@ -5,7 +5,7 @@ import sys
 # Инициализируем Pygame
 pygame.init()
 
-a = 4
+a = 7
 
 # Создаем окно
 screen = pygame.display.set_mode((200*a, 150*a))
