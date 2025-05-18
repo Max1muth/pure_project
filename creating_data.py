@@ -49,7 +49,7 @@ while True:
                         if j == len(l1stik):
                             print(l1stik)
                             # Создание DataFrame
-                            df = pd.DataFrame(l1stik, columns=["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"])
+                            df = pd.DataFrame(l1stik, columns=[str(i) for i in range(1, k+1)])
                             # Запись в CSV
                             df.to_csv("data.csv", index=False)
                             pygame.quit()
